@@ -1,0 +1,18 @@
+{
+    "name": "Neon Tally 3D",
+    "short_name": "Tally3D",
+    "background_color": "#050510",
+    "theme_color": "#00f3ff",
+    "display": "standalone",
+    "orientation": "portrait",
+    "scope": "./",
+    "start_url": "./index.html",
+    "icons": [
+        {
+            "src": "https://cdn-icons-png.flaticon.com/512/3258/3258499.png",
+            "sizes": "512x512",
+            "type": "image/png",
+            "purpose": "any maskable"
+        }
+    ]
+}
