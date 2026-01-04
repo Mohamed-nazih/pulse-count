@@ -1556,6 +1556,9 @@
             // Visual feedback start
             btnReset.classList.add('pressing');
 
+            // Charging vibration
+            if (navigator.vibrate) navigator.vibrate(1000);
+
             resetTimer = setTimeout(async () => {
                 // Save Session logic
                 if (count > 0) {
@@ -1597,6 +1600,7 @@
         function clearResetTimer() {
             clearTimeout(resetTimer);
             btnReset.classList.remove('pressing');
+            if (navigator.vibrate) navigator.vibrate(0); // Stop vibration
         }
 
         // Modal Logic
