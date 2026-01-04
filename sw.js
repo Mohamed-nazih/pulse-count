@@ -1,4 +1,4 @@
-const CACHE_NAME = 'tally3d-v2';
+const CACHE_NAME = 'pulsecount-v1';
 const ASSETS = [
     './',
     './index.html',

@@ -1,6 +1,6 @@
 {
-    "name": "Neon Tally 3D",
-    "short_name": "Tally3D",
+    "name": "PulseCount",
+    "short_name": "PulseCount",
     "background_color": "#050510",
     "theme_color": "#00f3ff",
     "display": "standalone",
