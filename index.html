@@ -1426,7 +1426,7 @@
             if (goal > 0 && count === goal) {
                 showToast("Goal Reached! 🎉", 4000);
                 playGoalSound();
-                if (navigator.vibrate) navigator.vibrate([100, 50, 100, 50, 200]);
+                if (navigator.vibrate) navigator.vibrate([200, 100, 200, 100, 600]);
                 // Celebration
                 document.body.classList.add('milestone-hit');
                 setTimeout(() => document.body.classList.remove('milestone-hit'), 2000);
@@ -1435,7 +1435,7 @@
             // Milestone Effect
             if (count % 100 === 0 && count > 0) {
                 document.body.classList.add('milestone-hit');
-                if (navigator.vibrate) navigator.vibrate(200);
+                if (navigator.vibrate) navigator.vibrate(400);
                 setTimeout(() => document.body.classList.remove('milestone-hit'), 1500);
             }
 
@@ -1444,7 +1444,7 @@
             updateProgressRing();
 
             // Haptic feedback if available
-            if (navigator.vibrate) navigator.vibrate(10);
+            if (navigator.vibrate) navigator.vibrate(50);
         }
 
         function updateProgressRing() {
@@ -1589,7 +1589,7 @@
                 updateDisplay();
                 updateProgressRing();
 
-                if (navigator.vibrate) navigator.vibrate([50, 50, 50]);
+                if (navigator.vibrate) navigator.vibrate([100, 50, 100]);
                 btnReset.classList.remove('pressing');
             }, 800); // 800ms long press
         }
